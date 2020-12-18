@@ -1,0 +1,66 @@
+% rebase('osnova.html')
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title" style = "font-size: 40px">
+                ZAVETIŠČE
+            </h1>
+            <h2 class="subtitle">
+                pregled nad zavetiščem
+            </h2>
+        </div>
+    </div>
+</section>
+<div style = "margin-top: 5px;">
+    % if ime:
+        Prijavljen uporabnik: {{ime}}
+        (<a href="/odjava/" style = "color: black">odjava</a>)
+    % else:
+    <a href="/prijava/" style = "color: black">prijava</a> | 
+    <a href="/vpis/" style = "color: black">vpis</a>
+    % end
+</div>
+
+ <div style = "margin-top: 50px;" >
+
+<a href="/dodaj-osebo/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp dodaj osebo &nbsp</a>
+<a href="/dodaj-zival/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp dodaj žival &nbsp</a>
+<a href="/dodaj-cepljenje/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp cepljenje &nbsp</a>
+<a href="/posvojitev/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp posvojitev &nbsp</a>
+<a href="/prostori/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp prostori &nbsp</a>
+<a href="/precepljenost/" style = "background-color: #999999; border-radius: 10px; color: white; font-size: 18px; margin-left: 5px;">&nbsp precepljenost &nbsp</a>
+</div>
+
+ <div style = "margin-top: 20px;" >
+
+<form action="/isci-o/">
+
+        <label class="label">Išči osebo</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Vpiši ime ali priimek osebe" name="iskalni_niz">
+        </div>
+    
+
+    <div class="field">
+        <div class="control">
+            <button class="button">Išči!</button>
+        </div>
+</form>
+
+<form action="/isci-z/">
+    <div class="field" style = "margin-top: 20px;">
+        <label class="label">Išči žival</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Vpiši ime živali" name="iskalni_niz">
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <button class="button">Išči!</button>
+        </div>
+</form>
+</div>
+<div style = "position: relative;">
+<img class="wp-image-5100 td-animation-stack-type1-2" src="https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1.jpg" alt="pes in mačka" width="700" height="500" srcset="https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1.jpg 1600w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-300x159.jpg 300w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-768x407.jpg 768w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-1024x543.jpg 1024w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-600x318.jpg 600w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-696x369.jpg 696w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-1068x566.jpg 1068w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-792x420.jpg 792w" sizes="(max-width: 653px) 100vw, 653px">
+</div>

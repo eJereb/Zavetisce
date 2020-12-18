@@ -1,0 +1,50 @@
+% rebase('osnova.html')
+<h2>Dodaj žival</h2>
+
+<form method="POST">
+    
+<div class="field">
+<input type="radio" id="male" name="spol" value="M" required>&nbsp Samec &nbsp &nbsp</input>
+<input type="radio" id="female" name="spol" value="Z" required>&nbsp Samica</input>
+</div>
+<div class="field" style = "margin-top: 10px">
+<input type="radio" id="pes" name="vrsta" value="P">&nbsp Pes &nbsp &nbsp &nbsp &nbsp &nbsp</input>
+<input type="radio" id="macka" name="vrsta" value="M">&nbsp Mačka</input>
+</div>
+<div class="field" style = "margin-top: 10px">
+
+<label class="label">Ime*</label>
+<div class="control">
+<input class="input" type="text" placeholder="Vpiši ime živali" name="ime" value="{{ime}}" required>
+</div>
+
+<label class="label">Datum rojstva</label>
+<div class="control">
+<input class="date" type="date" placeholder="Vpiši datum rojstva živali" name="dat_roj" value="{{dat_roj}}">
+</div>
+
+<label class="label">Datum Sprejema*</label>
+<div class="control">
+<input class="date" type="date" placeholder="Vpiši datum sprejema živali" name="dat_spr" value="{{dat_spr}}" required>
+</div>
+
+<label class="label">Bolezni</label>
+<div class="control">
+<input class="input" type="text" placeholder="Vpiši bolezni živali" name="bolezni" value="{{bolezni}}">
+</div>
+
+
+
+<div class="field">
+
+<div class="control">
+ <button class="button">Dodaj!</button>
+</div>
+</form>
+
+% if napaka:
+        <p class="help is-danger" style = "margin-top: 20px; color:red;">{{napaka}}</p>
+        % end
+
+<img style="-webkit-user-select: none;max-width: 100%;margin-left: -500px; margin-right: 100px;margin-top: 100px;" width="500" height="300" src="http://www.allwhitebackground.com/images/3/3328.jpg">
+<img style="-webkit-user-select: none;max-width: 100%;margin-right: -500px;margin-top: 100px" width="500" height="300" src="https://s1.1zoom.me/b5050/947/Cats_White_background_Kittens_Paws_547032_3840x2400.jpg">

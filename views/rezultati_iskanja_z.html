@@ -1,0 +1,44 @@
+  
+% rebase('osnova.html')
+<h2 style="margin-bottom: 40px;">Živali, ki imajo v imenu "{{iskalni_niz}}"</h2>
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+
+<table style="width:60%; margin-left: 20%;">
+  <tr>
+    <th>ID živali</th>
+    <th>Ime</th>
+    <th>Vrsta</th>
+    <th>Spol</th>
+    <th>Datum sprejema</th>
+    <th>Bolezni</th>
+  </tr>
+  % for zival in zivali:
+  <tr>
+    <td>{{zival.id}}</td>
+    <td>{{zival.ime}}</td>
+    <td>{{zival.vrsta}}</td>
+    <td>{{zival.spol}}</td>
+    <td>{{zival.dat_spr}}</td>
+    <td>{{zival.bolezni}}</td>
+  </tr>
+  % end
+</table>
+
+<img style="-webkit-user-select: none;max-width: 100%;margin-left: -500px; margin-right: 100px;margin-top: 300px;" width="500" height="300" src="http://www.allwhitebackground.com/images/3/3328.jpg">
+<img style="-webkit-user-select: none;max-width: 100%;margin-right: -500px;margin-top: 300px;" width="500" height="300" src="https://s1.1zoom.me/b5050/947/Cats_White_background_Kittens_Paws_547032_3840x2400.jpg">

@@ -1,0 +1,43 @@
+% rebase('osnova.html')
+<h2>Prijavi se</h2>
+<head>
+    
+    <script src="https://kit.fontawesome.com/7bebbc9ff2.js" crossorigin="anonymous"></script>
+  </head>
+
+<form method="POST">
+    <div class="field">
+        <label class="label">Uporabniško ime</label>
+        <div class="control">
+            <input class="input" type="text" name="uporabnisko_ime" value="{{ime}}">
+            
+            <i class="fas fa-user fa-lg"></i>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Geslo</label>
+         </div>
+  <div class="control">
+    <input class="input" type="password" placeholder="Geslo" name = "geslo">
+    <span class="align-middle"><i class="fas fa-unlock-alt fa-lg"></i>
+  </div>
+
+
+
+
+
+        % if napaka:
+        <p class="help is-danger">{{napaka}}</p>
+        % end
+   
+
+        <div class="control">
+            <button class="button"  style = "margin-bottom: 112px;">Prijavi se!</button>
+        </div>
+        
+
+</form>
+ <div style = "position: relative;">
+<img class="wp-image-5100 td-animation-stack-type1-2" src="https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1.jpg" alt="pes in mačka" width="900" height="500" srcset="https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1.jpg 1600w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-300x159.jpg 300w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-768x407.jpg 768w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-1024x543.jpg 1024w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-600x318.jpg 600w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-696x369.jpg 696w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-1068x566.jpg 1068w, https://likeout.net/wp-content/uploads/2017/04/psi-in-mačke-1-792x420.jpg 792w" sizes="(max-width: 653px) 100vw, 653px">
+</div>

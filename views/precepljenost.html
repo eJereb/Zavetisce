@@ -1,0 +1,33 @@
+% rebase('osnova.html')
+<h2 style="margin-bottom: 40px;">Precepljenost</h2>
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+
+
+<table style="width:20%; margin-left: 40%; margin-top: 20px;">
+    <tr>
+      <th>ID živali</th>
+      <th>ID cepiva</th>
+    </tr>
+    % for cepljenja in precepljenost:
+    <tr>
+      <td>{{cepljenja.id_z}}</td>
+      <td>{{cepljenja.id_c}}</td>
+    </tr>
+    % end
+  </table>

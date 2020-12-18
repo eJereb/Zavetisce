@@ -1,0 +1,41 @@
+  
+% rebase('osnova.html')
+<h2 style="margin-bottom: 40px;">Osebe, ki imajo v imenu "{{iskalni_niz}}"</h2>
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+<table style="width:60%;  margin-left: 20%;">
+  <tr>
+    <th>ID Osebe</th>
+    <th>Ime</th>
+    <th>Priimek</th>
+    <th>Mail</th>
+  </tr>
+  % for oseba in osebe:
+  <tr>
+    <td>{{oseba.id}}</td>
+    <td>{{oseba.ime}}</td>
+    <td>{{oseba.priimek}}</td>
+    <td>{{oseba.mail}}</td>
+  </tr>
+  % end
+</table>
+
+
+<img style="-webkit-user-select: none;max-width: 100%;margin-left: -500px; margin-right: 100px; margin-top: 350px;" width="500" height="300" src="http://www.allwhitebackground.com/images/3/3328.jpg">
+<img style="-webkit-user-select: none;max-width: 100%;margin-right: -500px;margin-top: 350px;" width="500" height="300" src="https://s1.1zoom.me/b5050/947/Cats_White_background_Kittens_Paws_547032_3840x2400.jpg">

@@ -1,0 +1,40 @@
+% rebase('osnova.html')
+<h2>Posvojitev živali</h2>
+
+<form method="POST">
+    
+<div class="field">
+
+<label class="label">ID živali*</label>
+<div class="control">
+<input class="input" type="text" placeholder="Vpiši ID živali" name="id_z" value="{{id_z}}" required>
+</div>
+
+<div class="field">
+
+<label class="label">ID osebe*</label>
+<div class="control">
+<input class="input" type="text" placeholder="Vpiši ID osebe" name="id_o" value="{{id_o}}" required>
+</div>
+
+<label class="label">Datum posvojitve</label>
+<div class="control">
+<input class="date" type="date" placeholder="Vpiši datum posvojitve" name="datum" value="{{datum}}">
+</div>
+
+
+<div style = "margin-top: 20px;" >
+<div class="field">
+
+<div class="control">
+ <button class="button">Dodaj!</button>
+</div>
+
+</form>
+ % if napaka:
+        <p class="help is-danger" style = "margin-top: 20px; color:red;">{{napaka}}</p>
+        % end
+   
+
+<img style="-webkit-user-select: none;max-width: 100%;margin-left: -500px; margin-right: 100px; margin-top:200px" width="500" height="300" src="http://www.allwhitebackground.com/images/3/3328.jpg">
+<img style="-webkit-user-select: none;max-width: 100%;margin-right: -500px;margin-top:200px" width="500" height="300" src="https://s1.1zoom.me/b5050/947/Cats_White_background_Kittens_Paws_547032_3840x2400.jpg">

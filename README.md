@@ -1,0 +1,1 @@
+Projekt pri predmetu Podatkovne baze 1.

@@ -1,0 +1,50 @@
+% rebase('osnova.html')
+<h2 style="margin-bottom: 40px;">Prostori</h2>
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+
+<table style="width:40%; margin-left: 30%;">
+  <tr>
+    <th>ID prostora</th>
+    <th>Oddelek</th>
+    <th>Kapaciteta</th>
+    <th>Zasedenost</th>
+  </tr>
+  % for prostor in prostori:
+  <tr>
+    <td>{{prostor.id}}</td>
+    <td>{{prostor.oddelek}}</td>
+    <td>{{prostor.kapaciteta}}</td>
+    <td>{{prostor.zasedenost}}</td>
+  </tr>
+  % end
+</table>
+
+<table style="width:20%; margin-left: 40%; margin-top: 20px;">
+    <tr>
+      <th>ID prostora</th>
+      <th>ID živali</th>
+    </tr>
+    % for namestitev in namestitve:
+    <tr>
+      <td>{{namestitev.id_p}}</td>
+      <td>{{namestitev.id_z}}</td>
+    </tr>
+    % end
+  </table>
+
